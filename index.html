@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>CrossFit</title>
+        <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"> 
+ <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" href="js/libs/jquery-mobile/jquery.mobile.css" />
+        <script type="text/javascript" src="cordova.js"></script>
+         <script type="text/javascript" src="js/libs/jquery/jquery.min.js"></script>
+         <script type="text/javascript" src="js/libs/jquery-mobile/jquery.mobile.js"></script>
+         <script type="text/javascript" src="js/jquery.i18n.properties-min-1.0.9.js"></script>
+         <script type="text/javascript" src="js/main.js"></script>
+          
+    </head>
+    <body>
+        <!--Pagina index contenente il menu di navigazione-->
+        <div data-dom-cache="false" data-role="page" id="index" >
+            
+            <div data-role="header" data-position="fixed" class="header"   >
+                <h1 id="titlePageApp"></h1>
+                <h2 id="h2Home">Home</h1>
+            </div>
+            
+            
+            <div data-role="content" class="scrollable">
+                <ul data-role="listview" class="menuPrincipale " data-inset="true">
+                    <li>
+                        <a id="btnmyprofile"  href="#myprofile" >
+                            Profilo
+                        </a>
+                    </li>
+                    <li>
+                        <a id="btnallenamenti" href="#allenamento" >
+                            Allenamento
+                        </a>
+                    </li>
+                    <li>
+                        <a id="btntimers" href="#timers" >
+                            Timers
+                        </a>
+                    </li>
+                    <li>
+                        <a id="btnvideo" href="#video" >
+                            Video
+                        </a>
+                    </li>
+                    <li>
+                        <a  id="btnnews" href="#paginanews" data-transition="flip">
+                            News
+                        </a>
+                    </li>
+                    <li>
+                        <a id="btninfo" href="#info" data-transition="flip">
+                            Info
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div> 
+        </div>
+        <!--end pagina con menu di navigazione-->
+        
+        <!--pagina news-->
+        <div data-dom-cache="false" data-role="page" id="paginanews"  >
+             <div data-role="header" data-position="fixed" class="header"   >
+                <h1 id="titlePageAppNews"></h1>
+                <h2 id="h2News"></h1>
+            </div>
+            <div data-role="content" class="scrollable">
+                <ul data-role="listview" class="" id="elenco_notizie" data-inset="true">
+                    
+                </ul>
+            </div>
+        </div>
+        <!--end pagina news-->
+        
+        <!--pagina info-->
+        <div data-dom-cache="false" data-role="page" id="info"  >
+             <div data-role="header" data-position="fixed" class="header"   >
+                <h1 id="titlePageAppInfo"></h1>
+                <h2 id="h2Info"></h1>
+            </div>
+            <div data-role="content" class="scrollable">
+                <img src="res/images/logo_city.png" class="logo_city" />
+                <p class="infoRed">A.S.D. CITY GYM</p>
+                <p class="infoWhite alLeft">
+                    Via Forlanini, 36 Ragusa<br/>
+                    Tel. <a href="tel:+393926968391">3926968391</a>/<a href="tel:+393924841681">3924841681</a><br/>
+                    E-mail. alfiocitygym@gmail.com<br/>
+                </p>
+                <p class="infoWhite alCenter">
+                    <a onclick="goUrl('http://www.asdcitygym.it');">WWW.ASDCITYGYM.IT</a>
+                </p>
+                
+                <p class="infoGrigio alLeft">
+                    Dona il tuo 5 X MILLE alla A.S.D. City Gym
+                </p>
+                <p class="infoWhiteSmall alLeft" style="margin-top:0px;">
+                    P.IVA e COD. FISC.: 01370830885 
+                </p>
+                
+                <p class="infoCredit alCenter">
+                    powered by Dario Piccitto<br/>
+                    <a onclick="goUrl('http://www.dariopiccitto.it');">www.dariopiccitto.it</a>
+                </p>
+                
+            </div>
+        </div>
+        <!--end pagina info-->
+        
+        
+    </body>
+</html>
